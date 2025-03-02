@@ -34,7 +34,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<input type='number' id='valor$i' name='valor$i' step='0.01' required><br><br>";
     }
 
-    echo "<button type='submit' class='btn'>Generar Factura</button
+    echo "<button type='submit' class='btn'>Generar Factura</button>
         </form>
          <img src='../frontend/img/lava.png'>
         </div>
