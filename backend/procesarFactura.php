@@ -87,10 +87,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='../frontend/css/styles.css'>
         <title>Factura</title>
     </head>
     <body>
         <h1>Factura</h1>
+        <div class='precios'> 
         <p><strong>Nombre del Cliente:</strong> $nombre</p>
         <p><strong>Tipo de Vehículo:</strong> $tipoVehiculo</p>
         <p><strong>Costo Base:</strong> $" . number_format($total['costoBase'], 2) . "</p>
@@ -99,6 +101,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <p><strong>Subtotal:</strong> $" . number_format($total['subTotal'], 2) . "</p>
         <p><strong>IVA (19%):</strong> $" . number_format($total['iva'], 2) . "</p>
         <p><strong>Total a Pagar:</strong> $" . number_format($total['total'], 2) . "</p>
+        
+        
+        
+        
+        <img src='../frontend/img/lava.png'>
+        </div>
+       
     </body>
     </html>";
 }

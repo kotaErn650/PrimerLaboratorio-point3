@@ -9,10 +9,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <head>
         <meta charset='UTF-8'>
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='../frontend/css/styles.css'>
         <title>Registro de Servicios</title>
     </head>
     <body>
         <h1>Registro de Servicios</h1>
+
+        <div class='precios'> 
         <form action='procesarFactura.php' method='post'>
             <input type='hidden' name='nombre' value='$nombre'>
             <input type='hidden' name='tipoVehiculo' value='$tipoVehiculo'>
@@ -31,8 +34,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "<input type='number' id='valor$i' name='valor$i' step='0.01' required><br><br>";
     }
 
-    echo "<input type='submit' value='Generar Factura'>
+    echo "<button type='submit' class='btn'>Generar Factura</button
         </form>
+         <img src='../frontend/img/lava.png'>
+        </div>
     </body>
     </html>";
 }

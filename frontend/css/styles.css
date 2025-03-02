@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    justify-content: center;
+    color: rgb(28, 32, 25);
+    background-image: url(../img/R.jpg);
+    background-position: center;
+    
+}
+
+header h1 {
+    background-image: url(../img/R.svg);
+    color: rgb(40, 0, 184);
+    margin-left: 20px; 
+    margin-top: 10px;
+    box-shadow: 0 5px 10px  rgba(8, 59, 226, 0.986);
+    border-radius: 5px;
+}
+h1{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+p{
+    color: aliceblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-image: url(../img/fondo.jpg);
+
+}
+
+.contenedor{
+    background-color:transparent;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+    align-items: center;
+}
+label{
+    color: bisque;
+}
+.btn{
+    color: black;
+    background-color: bisque;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.btn :hover{
+    background-color: rgb(255, 0, 0);
+    height: 2.5em;
+    width: 2.5rem;
+}
+
+
+.precios {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+    gap: 20px; /* Espacio entre la imagen y la tabla */
+    align-items: center; /* Centra verticalmente los elementos */
+}
